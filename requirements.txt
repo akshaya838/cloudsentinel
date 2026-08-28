@@ -1,0 +1,38 @@
+# --- Data & ingestion ---
+requests==2.32.3
+python-dotenv==1.0.1
+pandas==2.2.3
+
+# --- NLP / NER ---
+spacy==3.7.5
+transformers==4.44.2
+torch==2.4.1
+
+# --- Classification ---
+scikit-learn==1.5.1
+
+# --- Explainability ---
+lime==0.2.0.1
+
+# --- Embeddings & vector store ---
+sentence-transformers==3.0.1
+chromadb==0.5.5
+
+# --- RAG orchestration ---
+langchain==0.2.16
+langchain-community==0.2.16
+
+# --- Local LLM ---
+ollama==0.3.3
+
+# --- Speech (added when voice stage starts) ---
+# openai-whisper
+# TTS  # Coqui TTS
+
+# --- Backend / frontend ---
+fastapi==0.115.0
+uvicorn==0.30.6
+streamlit==1.38.0
+
+# --- Testing ---
+pytest==8.3.3
