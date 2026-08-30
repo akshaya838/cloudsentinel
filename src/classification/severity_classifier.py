@@ -52,6 +52,20 @@ CWE_IMPACT_MAP = {
     "CWE-502": ["Confidentiality", "Integrity", "Availability"], # Insecure deserialization
     "CWE-506": ["Integrity"],                          # Embedded malicious code
     "CWE-787": ["Confidentiality", "Integrity", "Availability"], # Out-of-bounds write
+    "CWE-125": ["Confidentiality"],                     # Out-of-bounds read
+    "CWE-269": ["Confidentiality", "Integrity", "Availability"], # Improper privilege management
+    "CWE-918": ["Confidentiality", "Integrity"],        # SSRF
+    "CWE-22":  ["Confidentiality", "Integrity"],        # Path traversal
+    "CWE-362": ["Integrity", "Availability"],           # Race condition
+    "CWE-416": ["Confidentiality", "Integrity", "Availability"], # Use after free
+    "CWE-330": ["Confidentiality", "Integrity"],        # Insufficiently random values
+    "CWE-310": ["Confidentiality"],                     # Cryptographic issues
+    "CWE-327": ["Confidentiality"],                     # Broken/risky crypto algorithm
+    "CWE-290": ["Confidentiality", "Integrity"],        # Authentication bypass by spoofing
+    "CWE-295": ["Confidentiality", "Integrity"],        # Improper certificate validation
+    "CWE-674": ["Availability"],                        # Uncontrolled recursion
+    "CWE-203": ["Confidentiality"],                     # Observable discrepancy (timing/padding oracle)
+    "CWE-190": ["Integrity", "Availability"],           # Integer overflow
 }
 
 

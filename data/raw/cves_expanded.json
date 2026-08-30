@@ -1,0 +1,192 @@
+[
+  {
+    "cve_id": "CVE-2021-44228",
+    "description": "A remote code execution flaw in Apache Log4j2 versions 2.0-beta9 through 2.14.1. Attackers who control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup substitution is enabled, commonly referred to as Log4Shell.",
+    "cvss_base_score": 10.0, "cvss_severity": "CRITICAL", "cwe_ids": ["CWE-502", "CWE-400", "CWE-20"]
+  },
+  {
+    "cve_id": "CVE-2023-4863",
+    "description": "A heap buffer overflow exists in the WebP image format handling in Google Chrome versions prior to 116.0.5845.187, allowing a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
+    "cvss_base_score": 8.8, "cvss_severity": "HIGH", "cwe_ids": ["CWE-787"]
+  },
+  {
+    "cve_id": "CVE-2022-22965",
+    "description": "Spring Framework versions 5.3.0 through 5.3.17 and 5.2.0 through 5.2.19, when deployed on Apache Tomcat as a WAR with JDK 9 or higher, are vulnerable to remote code execution via data binding, an issue known as Spring4Shell.",
+    "cvss_base_score": 9.8, "cvss_severity": "CRITICAL", "cwe_ids": ["CWE-94"]
+  },
+  {
+    "cve_id": "CVE-2023-38831",
+    "description": "WinRAR versions prior to 6.23 allow attackers to execute arbitrary code when a user opens a specially crafted archive containing a file with a matching name but different extension, exploited via a Trojanized RAR/ZIP archive.",
+    "cvss_base_score": 7.8, "cvss_severity": "HIGH", "cwe_ids": ["CWE-59"]
+  },
+  {
+    "cve_id": "CVE-2024-3094",
+    "description": "Malicious code was introduced into the upstream XZ Utils tarballs versions 5.6.0 and 5.6.1 via build-system obfuscation, allowing a remote attacker with a specific private key to intercept and modify SSHD authentication on affected Linux distributions.",
+    "cvss_base_score": 10.0, "cvss_severity": "CRITICAL", "cwe_ids": ["CWE-506", "CWE-78"]
+  },
+  {
+    "cve_id": "CVE-2014-0160",
+    "description": "OpenSSL versions 1.0.1 through 1.0.1f contain an out-of-bounds read in the TLS heartbeat extension, allowing remote attackers to read up to 64 kilobytes of process memory, including private keys and session data, commonly referred to as Heartbleed.",
+    "cvss_base_score": 7.5, "cvss_severity": "HIGH", "cwe_ids": ["CWE-125"]
+  },
+  {
+    "cve_id": "CVE-2017-5638",
+    "description": "The Jakarta Multipart parser in Apache Struts 2 versions 2.3.5 through 2.3.31 and 2.5 through 2.5.10 mishandles the Content-Type header during file upload, allowing remote attackers to execute arbitrary commands via a crafted request, later linked to the Equifax breach.",
+    "cvss_base_score": 10.0, "cvss_severity": "CRITICAL", "cwe_ids": ["CWE-20"]
+  },
+  {
+    "cve_id": "CVE-2017-0144",
+    "description": "The SMBv1 server in Microsoft Windows mishandles crafted packets, allowing remote attackers to execute arbitrary code via a buffer overflow, the vulnerability exploited by the EternalBlue tool and the WannaCry ransomware outbreak.",
+    "cvss_base_score": 8.1, "cvss_severity": "HIGH", "cwe_ids": ["CWE-787"]
+  },
+  {
+    "cve_id": "CVE-2014-6271",
+    "description": "GNU Bash versions through 4.3 process trailing strings after function definitions in environment variables, allowing remote attackers to execute arbitrary code via a crafted environment, commonly referred to as Shellshock.",
+    "cvss_base_score": 9.8, "cvss_severity": "CRITICAL", "cwe_ids": ["CWE-78"]
+  },
+  {
+    "cve_id": "CVE-2021-34527",
+    "description": "The Windows Print Spooler service improperly performs privileged file operations, allowing a remote authenticated attacker to execute arbitrary code with system privileges, an issue known as PrintNightmare.",
+    "cvss_base_score": 8.8, "cvss_severity": "HIGH", "cwe_ids": ["CWE-269"]
+  },
+  {
+    "cve_id": "CVE-2021-26855",
+    "description": "Microsoft Exchange Server versions 2013, 2016, and 2019 contain a server-side request forgery vulnerability allowing an attacker to send arbitrary HTTP requests and authenticate as the Exchange server, an issue known as ProxyLogon.",
+    "cvss_base_score": 9.8, "cvss_severity": "CRITICAL", "cwe_ids": ["CWE-918"]
+  },
+  {
+    "cve_id": "CVE-2022-30190",
+    "description": "The Microsoft Support Diagnostic Tool executes arbitrary code when called via the URL protocol from a calling application such as Word, allowing remote attackers to run PowerShell commands via a crafted document, an issue known as Follina.",
+    "cvss_base_score": 7.8, "cvss_severity": "HIGH", "cwe_ids": ["CWE-94"]
+  },
+  {
+    "cve_id": "CVE-2016-5195",
+    "description": "A race condition in the memory subsystem of the Linux kernel allows local users to gain write access to read-only memory mappings, enabling privilege escalation, an issue known as Dirty COW.",
+    "cvss_base_score": 7.8, "cvss_severity": "HIGH", "cwe_ids": ["CWE-362"]
+  },
+  {
+    "cve_id": "CVE-2019-0708",
+    "description": "The Remote Desktop Services component in Microsoft Windows improperly handles connection requests, allowing an unauthenticated remote attacker to execute arbitrary code via a use-after-free condition, an issue known as BlueKeep.",
+    "cvss_base_score": 9.8, "cvss_severity": "CRITICAL", "cwe_ids": ["CWE-416"]
+  },
+  {
+    "cve_id": "CVE-2020-1472",
+    "description": "The Netlogon Remote Protocol in Microsoft Windows Server uses a weak cryptographic algorithm for authentication, allowing an attacker with network access to a domain controller to escalate privileges, an issue known as ZeroLogon.",
+    "cvss_base_score": 10.0, "cvss_severity": "CRITICAL", "cwe_ids": ["CWE-330"]
+  },
+  {
+    "cve_id": "CVE-2018-7600",
+    "description": "Drupal core versions before 7.58, 8.x before 8.3.9, 8.4.x before 8.4.6, and 8.5.x before 8.5.1 do not properly sanitize certain input, allowing remote attackers to execute arbitrary code, an issue known as Drupalgeddon2.",
+    "cvss_base_score": 9.8, "cvss_severity": "CRITICAL", "cwe_ids": ["CWE-20"]
+  },
+  {
+    "cve_id": "CVE-2019-19781",
+    "description": "Citrix Application Delivery Controller and Gateway versions before 11.1.51.21 allow directory traversal, enabling an unauthenticated remote attacker to execute arbitrary code on the appliance.",
+    "cvss_base_score": 9.8, "cvss_severity": "CRITICAL", "cwe_ids": ["CWE-22"]
+  },
+  {
+    "cve_id": "CVE-2021-21985",
+    "description": "VMware vCenter Server contains a remote code execution vulnerability in the vSAN Health Check plug-in, exploitable via port 443 by an attacker with network access, due to insufficient input validation.",
+    "cvss_base_score": 9.8, "cvss_severity": "CRITICAL", "cwe_ids": ["CWE-20"]
+  },
+  {
+    "cve_id": "CVE-2021-40444",
+    "description": "Microsoft MSHTML contains a remote code execution vulnerability, allowing an attacker to craft a malicious ActiveX control used by a Microsoft Office document that hosts the browser rendering engine, an issue exploited before a patch was available.",
+    "cvss_base_score": 8.8, "cvss_severity": "HIGH", "cwe_ids": ["CWE-94"]
+  },
+  {
+    "cve_id": "CVE-2022-1388",
+    "description": "F5 BIG-IP versions 16.1.x, 15.1.x, 14.1.x, 13.1.x, and 12.1.x allow an attacker with network access to the iControl REST interface to bypass authentication and execute arbitrary system commands.",
+    "cvss_base_score": 9.8, "cvss_severity": "CRITICAL", "cwe_ids": ["CWE-306"]
+  },
+  {
+    "cve_id": "CVE-2023-3519",
+    "description": "Citrix NetScaler ADC and NetScaler Gateway contain a code execution vulnerability due to insufficient input validation, exploitable by an unauthenticated attacker on appliances configured as a gateway or AAA virtual server.",
+    "cvss_base_score": 9.8, "cvss_severity": "CRITICAL", "cwe_ids": ["CWE-787"]
+  },
+  {
+    "cve_id": "CVE-2018-11776",
+    "description": "Apache Struts versions 2.3 through 2.3.34 and 2.5 through 2.5.16 contain a remote code execution flaw in the Struts REST plugin when results are configured to use custom namespaces without a defined value or wildcard mapping.",
+    "cvss_base_score": 8.1, "cvss_severity": "HIGH", "cwe_ids": ["CWE-20"]
+  },
+  {
+    "cve_id": "CVE-2021-3156",
+    "description": "Sudo before 1.9.5p2 contains a heap-based buffer overflow, exploitable by any local user without authentication, an issue known as Baron Samedit, allowing privilege escalation to root.",
+    "cvss_base_score": 7.8, "cvss_severity": "HIGH", "cwe_ids": ["CWE-787"]
+  },
+  {
+    "cve_id": "CVE-2022-26134",
+    "description": "Atlassian Confluence Server and Data Center are vulnerable to unauthenticated remote code execution via an OGNL injection flaw reachable through a crafted URL, affecting multiple supported versions.",
+    "cvss_base_score": 9.8, "cvss_severity": "CRITICAL", "cwe_ids": ["CWE-94"]
+  },
+  {
+    "cve_id": "CVE-2023-34362",
+    "description": "Progress MOVEit Transfer contains a SQL injection vulnerability in the web application, allowing an unauthenticated attacker to gain unauthorized access to the underlying database and escalate privileges.",
+    "cvss_base_score": 9.8, "cvss_severity": "CRITICAL", "cwe_ids": ["CWE-89"]
+  },
+  {
+    "cve_id": "CVE-2018-13379",
+    "description": "Fortinet FortiOS SSL VPN web portal versions before 6.0.5 allow an unauthenticated attacker to download system files via specially crafted HTTP resource requests, an issue enabling path traversal.",
+    "cvss_base_score": 9.8, "cvss_severity": "CRITICAL", "cwe_ids": ["CWE-22"]
+  },
+  {
+    "cve_id": "CVE-2020-5902",
+    "description": "The Traffic Management User Interface in F5 BIG-IP versions 11.6.x through 16.0.x allows remote attackers to execute arbitrary system commands, create or delete files, and disable services via crafted HTTP requests.",
+    "cvss_base_score": 9.8, "cvss_severity": "CRITICAL", "cwe_ids": ["CWE-78"]
+  },
+  {
+    "cve_id": "CVE-2022-0847",
+    "description": "A flaw in the way the Linux kernel's pipe buffering mechanism handles page cache allows a local unprivileged user to overwrite data in read-only files, an issue known as Dirty Pipe.",
+    "cvss_base_score": 7.8, "cvss_severity": "HIGH", "cwe_ids": ["CWE-787"]
+  },
+  {
+    "cve_id": "CVE-2014-3566",
+    "description": "The SSL 3.0 protocol uses non-deterministic CBC padding, allowing man-in-the-middle attackers to decrypt selected ciphertext bytes via a padding-oracle attack, an issue known as POODLE.",
+    "cvss_base_score": 4.3, "cvss_severity": "MEDIUM", "cwe_ids": ["CWE-310"]
+  },
+  {
+    "cve_id": "CVE-2016-2183",
+    "description": "Legacy 64-bit block ciphers such as 3DES used in TLS and OpenVPN cipher suites are vulnerable to a birthday-bound collision attack over long-lived encrypted connections, an issue known as SWEET32.",
+    "cvss_base_score": 5.9, "cvss_severity": "MEDIUM", "cwe_ids": ["CWE-327"]
+  },
+  {
+    "cve_id": "CVE-2019-1040",
+    "description": "Microsoft Windows contains a tampering vulnerability due to a flaw in NTLM MIC (Message Integrity Check) handling, allowing a man-in-the-middle attacker to bypass NTLM relay mitigations.",
+    "cvss_base_score": 5.9, "cvss_severity": "MEDIUM", "cwe_ids": ["CWE-290"]
+  },
+  {
+    "cve_id": "CVE-2015-4000",
+    "description": "The TLS protocol permits negotiation of export-grade 512-bit Diffie-Hellman groups, allowing a man-in-the-middle attacker to downgrade a connection to weak cryptography, an issue known as Logjam.",
+    "cvss_base_score": 5.9, "cvss_severity": "MEDIUM", "cwe_ids": ["CWE-310"]
+  },
+  {
+    "cve_id": "CVE-2020-0601",
+    "description": "The Windows CryptoAPI validates Elliptic Curve Cryptography certificates improperly, allowing an attacker to spoof the validity of a code-signing certificate, an issue known as CurveBall.",
+    "cvss_base_score": 6.8, "cvss_severity": "MEDIUM", "cwe_ids": ["CWE-295"]
+  },
+  {
+    "cve_id": "CVE-2011-3389",
+    "description": "The TLS protocol version 1.0 and SSL 3.0 use a block cipher in CBC mode with predictable initialization vectors, allowing man-in-the-middle attackers to obtain plaintext HTTP headers, an issue known as BEAST.",
+    "cvss_base_score": 4.3, "cvss_severity": "LOW", "cwe_ids": ["CWE-310"]
+  },
+  {
+    "cve_id": "CVE-2016-2107",
+    "description": "The AES-NI implementation in OpenSSL versions 1.0.1 through 1.0.1s and 1.0.2 through 1.0.2g does not consider memory allocation during a padding check, allowing remote attackers to obtain plaintext via a padding-oracle attack.",
+    "cvss_base_score": 5.9, "cvss_severity": "MEDIUM", "cwe_ids": ["CWE-310"]
+  },
+  {
+    "cve_id": "CVE-2018-0739",
+    "description": "The ASN.1 decoder in OpenSSL versions before 1.1.0h mishandles deeply nested structures, allowing an attacker to trigger excessive recursion and stack exhaustion via a crafted certificate, resulting in denial of service.",
+    "cvss_base_score": 3.7, "cvss_severity": "LOW", "cwe_ids": ["CWE-674"]
+  },
+  {
+    "cve_id": "CVE-2019-1559",
+    "description": "OpenSSL versions 1.0.2 through 1.0.2q and 1.1.0 through 1.1.0j return different error behavior for zero-length record padding, allowing a network attacker to learn partial plaintext via a timing-based padding-oracle attack, an issue known as 0-byte Ricochet.",
+    "cvss_base_score": 3.7, "cvss_severity": "LOW", "cwe_ids": ["CWE-203"]
+  },
+  {
+    "cve_id": "CVE-2021-23840",
+    "description": "The EVP_CipherUpdate function family in OpenSSL versions before 1.1.1j can overflow an internal buffer length calculation on 32-bit platforms, potentially causing memory corruption in downstream applications.",
+    "cvss_base_score": 5.9, "cvss_severity": "LOW", "cwe_ids": ["CWE-190"]
+  }
+]

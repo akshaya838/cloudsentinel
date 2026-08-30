@@ -1,0 +1,6 @@
+{
+  "n_queries": 24,
+  "hit_rate_at_1": 0.875,
+  "hit_rate_at_3": 0.917,
+  "mrr": 0.896
+}

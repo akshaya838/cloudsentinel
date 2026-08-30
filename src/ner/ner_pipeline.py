@@ -48,11 +48,20 @@ ATTACK_VECTOR_KEYWORDS = [
 
 CVE_ID_PATTERN = re.compile(r"CVE-\d{4}-\d{4,7}", re.IGNORECASE)
 CWE_ID_PATTERN = re.compile(r"CWE-\d{1,4}", re.IGNORECASE)
+
+# NOTE (found during Phase-I evaluation): version numbers can have more than
+# 3 segments (e.g. Chrome's 116.0.5845.187), so the numeric part allows 1-3
+# dot-separated groups after the first. Also, the "range" alternative (X
+# through Y) captures its own span in the "range" named group so the leading
+# "versions " qualifier word can be stripped from the reported entity text —
+# earlier this word was inconsistently included, causing span drift against
+# hand-labeled gold data. The "prior to"/"before" alternatives keep their
+# qualifier word since it's meaningful there (there's no second bound to pair
+# it with).
+_VNUM = r"\d+(?:\.\d+){1,3}[a-z]?(?:-\w+)?"
 VERSION_RANGE_PATTERN = re.compile(
-    r"(?:versions?\s+)?"
-    r"(?:\d+\.\d+(?:\.\d+)?(?:[-\w]*)?\s*(?:through|to|-)\s*\d+\.\d+(?:\.\d+)?(?:[-\w]*)?"
-    r"|prior to\s+\d+\.\d+(?:\.\d+)?(?:[-\w]*)?"
-    r"|before\s+\d+\.\d+(?:\.\d+)?(?:[-\w]*)?)",
+    rf"(?:versions?\s+)?(?P<range>{_VNUM}\s*(?:through|to|-)\s*{_VNUM})"
+    rf"|(?P<bound>prior to\s+{_VNUM}|before\s+{_VNUM})",
     re.IGNORECASE,
 )
 
@@ -86,7 +95,11 @@ def regex_entities(text: str) -> list[dict]:
     for match in CWE_ID_PATTERN.finditer(text):
         entities.append({"text": match.group(), "label": "CWE_ID", "start": match.start(), "end": match.end()})
     for match in VERSION_RANGE_PATTERN.finditer(text):
-        entities.append({"text": match.group(), "label": "VERSION_RANGE", "start": match.start(), "end": match.end()})
+        if match.group("range") is not None:
+            start, end = match.start("range"), match.end("range")
+        else:
+            start, end = match.start("bound"), match.end("bound")
+        entities.append({"text": text[start:end], "label": "VERSION_RANGE", "start": start, "end": end})
     return entities
 
 
